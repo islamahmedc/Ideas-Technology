@@ -125,7 +125,7 @@ void LCD_voidWriteData(uint8 cpy_u8Data){
 [in/out] : N/A
 [Returns] : N/A
 ------------------------------------------------------------------------------ */
-void LCD_Send_A_String(char *StringOfCharacters){
+void LCD_Send_A_String(uint8 *StringOfCharacters){
 
 	//convert string to series of characters and send it to be displayed
 	while(*StringOfCharacters > 0)
