@@ -1,0 +1,47 @@
+/*
+ * LCD_Configuration.h
+ *
+ *  Created on: Jul 10, 2018
+ *      Author: Islam Ahmed
+ */
+
+#ifndef LCD_CONFIGURATION_H_
+#define LCD_CONFIGURATION_H_
+
+/********************************************************************************
+***** Includes                  										    *****
+********************************************************************************/
+#include "DIO_Private.h"
+
+/********************************************************************************
+*********************************************************************************
+***** Functions ProtoTypes                  							    *****
+*********************************************************************************
+********************************************************************************/
+
+/* ------------------------------------------------------------------------------
+[Function Name] : LCD_voidLcdInit
+[Description] : This function is to initialize and start LCD
+[Args] :
+[in] : N/A
+[out] : N/A
+[in/out] : N/A
+[Returns] : N/A
+------------------------------------------------------------------------------ */
+void LCD_voidLcdInit(void);
+
+/* ------------------------------------------------------------------------------
+[Function Name] : LCD_voidSendCommand
+[Description] : This function is to send commands to LCD
+[Args] :
+[in] : Takes 8-bit command
+[out] : N/A
+[in/out] : N/A
+[Returns] : N/A
+------------------------------------------------------------------------------ */
+void LCD_voidSendCommand(uint8 cpy_u8Command);
+
+
+
+
+#endif /* LCD_CONFIGURATION_H_ */

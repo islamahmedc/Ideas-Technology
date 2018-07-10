@@ -1,0 +1,19 @@
+/*
+ * ADC_Interfacing.h
+ *
+ *  Created on: Jul 8, 2018
+ *      Author: hp
+ */
+
+#ifndef ADC_INTERFACING_H_
+#define ADC_INTERFACING_H_
+
+/********************************************************************************
+***** Registers Pins definitions                 				            *****
+********************************************************************************/
+//ADMUX PINs
+#define MUX0 0
+#define MUX1 1
+#define MUX2 2
+
+#endif /* ADC_INTERFACING_H_ */

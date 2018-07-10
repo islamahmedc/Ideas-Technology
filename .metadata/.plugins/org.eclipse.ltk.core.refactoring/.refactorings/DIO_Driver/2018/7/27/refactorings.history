@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;DIO_Driver/DIO.h&apos; to &apos;DIO_Private.h&apos;" description="Rename resource &apos;DIO.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="DIO.h" name="DIO_Private.h" stamp="1530987502502" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;DIO_Driver/Uart_Configration.h&apos; to &apos;DIO_Configration.h&apos;" description="Rename resource &apos;Uart_Configration.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Uart_Configration.h" name="DIO_Configration.h" stamp="1530988991715" updateReferences="true"/>
+</session>

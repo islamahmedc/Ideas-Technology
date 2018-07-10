@@ -1,0 +1,106 @@
+/*
+ * Uart_Configration.h
+ *
+ * Created: 7/3/2018 11:45:42 AM
+ *  Author: magdy
+ */ 
+
+
+#ifndef UART_CONFIGRATION_H_
+#define UART_CONFIGRATION_H_
+
+/********************************************************************************
+***** Includes                  										    *****
+********************************************************************************/
+#include "Uart_Private.h"
+
+
+/********************************************************************************
+*********************************************************************************
+***** Functions ProtoTypes                  							    *****
+*********************************************************************************
+********************************************************************************/
+
+/* ------------------------------------------------------------------------------
+[Function Name] : Uart_Init
+[Description] : This function is to init configrations for UART Module
+[Args] :
+[in] : Uart BaudRate for the data out and in for the module
+[out] : N/A
+[in/out] : N/A
+[Returns] : N/A
+------------------------------------------------------------------------------ */
+void Uart_Init(uint32 BaudRate);
+
+/* ------------------------------------------------------------------------------
+[Function Name] : Uart_Transmit_Char
+[Description] : This function is to transmit one char through the TX pin
+[Args] :
+[in] : Tdata , transmitted char from type of uint8
+[out] : N/A
+[in/out] : N/A
+[Returns] : N/A
+------------------------------------------------------------------------------ */
+void Uart_Transmit_Char(uint8 Tdata);
+
+/* ------------------------------------------------------------------------------
+[Function Name] : Uart_Receive_Char
+[Description] : This function is to Receive one char through the RX pin
+[Args] :
+[in] : N/A
+[out] : N/A
+[in/out] : N/A
+[Returns] : received char from type of uint8
+------------------------------------------------------------------------------ */
+uint8 Uart_Receive_Char(void);
+
+/* ------------------------------------------------------------------------------
+[Function Name] : Uart_Transmit_String
+[Description] : This function is to Transmit Sting of char through the RX pin
+[Args] :
+[in] : Tstring ,array of char transmitted through TX Pin
+[out] : N/A
+[in/out] : N/A
+[Returns] : N/A
+------------------------------------------------------------------------------ */
+void Uart_Transmit_String(uint8 const * Tstring);
+
+/* ------------------------------------------------------------------------------
+[Function Name] : Uart_Receive_String
+[Description] : This function is to Receive string of chars through the RX pin
+[Args] :
+[in] : N/A
+[out] : N/A
+[in/out] : N/A
+[Returns] : received array of char from type of uint8
+------------------------------------------------------------------------------ */
+uint8 * Uart_Receive_String(void);
+
+
+/********************************************************************************
+***** Enumerations and Structures              							    *****
+********************************************************************************/
+enum UART_BAUDRATE_t {
+	BR_110    = 110,
+	BR_300    = 300,
+	BR_600    = 600,
+	BR_1200   = 1200,
+	BR_2400   = 2400,
+	BR_4800   = 4800,
+	BR_9600   = 9600,
+	BR_14400  = 14400,
+	BR_19200  = 19200,
+	BR_28800  = 28800,
+	BR_38400  = 38400,
+	BR_56000  = 56000,
+	BR_57600  = 57600,
+	BR_115200 = 115200,
+	BR_128000 = 128000,
+	BR_153600 = 153600,
+	BR_230400 = 230400,
+	BR_256000 = 256000,
+	BR_460800 = 460800,
+	BR_921600 = 921600
+};
+
+#endif /* UART_CONFIGRATION_H_ */

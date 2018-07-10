@@ -1,0 +1,33 @@
+/*
+ * DIO_Configurations.h
+ *
+ *  Created on: Jul 7, 2018
+ *      Author: hp
+ */
+
+#ifndef DIO_CONFIGURATIONS_H_
+#define DIO_CONFIGURATIONS_H_
+
+/********************************************************************************
+***** Includes                  										    *****
+********************************************************************************/
+#include "DIO_Private.h"
+
+/********************************************************************************
+*********************************************************************************
+***** Functions ProtoTypes                  							    *****
+*********************************************************************************
+********************************************************************************/
+
+/* ------------------------------------------------------------------------------
+[Function Name] : Uart_Init
+[Description] : This function is to init configrations for UART Module
+[Args] :
+[in] : Uart BaudRate for the data out and in for the module
+[out] : N/A
+[in/out] : N/A
+[Returns] : N/A
+------------------------------------------------------------------------------ */
+void DIO_voidSetDirection(uint8 Copy_u8PinNum, uint8 Copy_u8PinValue );
+
+#endif /* DIO_CONFIGURATIONS_H_ */

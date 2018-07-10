@@ -1,0 +1,30 @@
+/*
+ * Timer_Program.c
+ *
+ *  Created on: Jul 9, 2018
+ *      Author: Islam Ahmed
+ */
+
+/********************************************************************************
+***** Includes                  										    *****
+********************************************************************************/
+#include "avr/interrupt.h"
+#include "DIO_Configurations.h"
+#include "DIO_Interfacing.h"
+#include "Timer_Configuration.h"
+#include "Timer_Interfacing.h"
+#include "utilites.h"
+
+/********************************************************************************
+***** Functions Definitions                								    *****
+********************************************************************************/
+
+/* ------------------------------------------------------------------------------
+[Function Name] : DIO_voidSetDirection
+[Description] : This function is to set the direction of each pin input or output
+[Args] :
+[in] : The number of pin & the direction (Input or output)
+[out] : N/A
+[in/out] : N/A
+[Returns] : N/A
+------------------------------------------------------------------------------ */
